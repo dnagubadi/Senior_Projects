@@ -46,11 +46,11 @@ Then visit:
 
 ## Deploying to GitHub Pages
 
-1. Push this repository to GitHub (`dnagubadi/Senior-Projects`).
+1. Push this repository to GitHub (`dnagubadi/Senior_Projects`).
 2. Open **Settings → Pages**.
 3. Set **Build and deployment → Source** to **Deploy from a branch**.
 4. Choose branch `main` and folder `/ (root)`.
-5. After it publishes, open `https://dnagubadi.github.io/Senior-Projects/` for the landing page, or add a folder name such as `/personal-site/`.
+5. After it publishes, open `https://dnagubadi.github.io/Senior_Projects/` for the landing page, or add a folder name such as `/spark-site/` or `/personal-site/`.
 
 All paths are relative, so every site works from its folder on the Pages URL.
 

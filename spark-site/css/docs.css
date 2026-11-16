@@ -284,7 +284,7 @@
   min-width: 34rem;
   margin: 0;
   border-collapse: collapse;
-  font-size: var(--text-sm);
+  font-size: var(--text-base); /* 18px+: same size as body copy */
 }
 
 .prose th,
