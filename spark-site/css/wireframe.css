@@ -1,6 +1,6 @@
 /* ==========================================================================
    Wireframe board for the example journey (Sound Lab).
-   Low-fidelity on purpose: navy outlines, one orange accent, mono labels.
+   Low-fidelity on purpose: navy outlines, sun behind labels, orange only as a border or mark.
    ========================================================================== */
 
 .wf-board {
@@ -8,7 +8,8 @@
   --wf-muted: var(--slate);
   --wf-paper: #fffdf9;
   --wf-line: #d9d2c6;
-  --wf-accent: var(--orange-400);   /* fills only; text on it stays navy (7.9:1) */
+  --wf-accent: var(--orange-400);   /* borders and non-text marks; never a text background */
+  --wf-action: var(--sun);          /* primary and REC fills; navy on #ffd166 is 12.3:1 */
 
   padding-block: var(--space-6) var(--space-9);
 }
@@ -150,7 +151,11 @@
   white-space: nowrap;
 }
 
-.wf-btn--fill { background: var(--wf-accent); }
+.wf-btn--fill {
+  background: var(--wf-action);
+  border-color: var(--wf-accent);
+  color: var(--wf-ink);
+}
 .wf-btn--dashed { border-style: dashed; border-color: var(--wf-muted); color: var(--wf-muted); }
 .wf-btn--sm { min-height: 2rem; padding-inline: var(--space-3); font-size: 0.7rem; }
 .wf-btn--block { width: 100%; }
@@ -211,9 +216,10 @@
   width: 4.5rem;
   height: 4.5rem;
   flex: none;
-  border: 2px solid var(--wf-ink);
+  border: 2px solid var(--wf-accent);
   border-radius: 50%;
-  background: var(--wf-accent);
+  background: var(--wf-action);
+  color: var(--wf-ink);
   font-family: var(--font-mono);
   font-size: 0.7rem;
   font-weight: var(--weight-bold);
